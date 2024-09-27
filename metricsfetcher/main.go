@@ -165,7 +165,7 @@ func main() {
 			for m := range ch {
 				mf := prom2json.NewFamily(m)
 
-				if mf.Name != "node_filesystem_avail" {
+				if mf.Name != "node_filesystem_avail_bytes" {
 					continue
 				}
 
